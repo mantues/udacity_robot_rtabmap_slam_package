@@ -8,6 +8,8 @@
   <arg name="camera_info_topic" default="/camera/rgb/camera_info"/>  
   <arg name="scan" default="/scan"/>  
 
+  <!-- tf Node -->
+  <node pkg='tf' type='static_transform_publisher' name='camera_tf' args='0 0 0 -1.5707 0 -1.5707 robot_footprint camera_link_optical 100'/>
 
   <!-- Mapping Node -->
   <group ns="rtabmap">
@@ -69,6 +71,9 @@
         <remap from="rgb/camera_info" to="$(arg camera_info_topic)"/>
         <remap from="scan"            to="$(arg scan)"/>
     </node>
+
+  <!-- rviz -->
+  <node pkg="rviz" type="rviz" args="-d '$(find myrobot)/rviz/rtabmap.rviz'" name="visualizer" respawn="true" />
 </launch>
 
 

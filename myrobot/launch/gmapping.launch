@@ -18,6 +18,7 @@ roslaunch myrobot gmapping.launch
     <param name="ymin" value="-30" type="double" />
   </node>
 
+  <!-- rviz -->
   <node pkg="rviz" type="rviz" args="-d '$(find myrobot)/rviz/gmapping.rviz'" name="visualizer" respawn="true" />
 
 </launch>
