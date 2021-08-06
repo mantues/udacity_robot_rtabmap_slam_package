@@ -14,7 +14,7 @@ mkdir -p ~/Desktop/udacity_ws/src
 cd ~/Desktop/udacity_ws/src
 git clone https://github.com/mantues/udacity_robot_rtabmap_slam_package
 git clone -b kinetic-devel https://github.com/introlab/rtabmap_ros
-chmod +x ~/Desktop/udacity_ws/src/udacity_robot_ball_chaser_kinetic_package/teleop_twist_keyboard/*.py 
+chmod +x ~/Desktop/udacity_ws/src/udacity_robot_rtabmap_slam_package/teleop_twist_keyboard/*.py 
 cd ~/Desktop/udacity_ws
 rosdep install --from-paths src --ignore-src --rosdistro kinetic -y
 catkin_make
