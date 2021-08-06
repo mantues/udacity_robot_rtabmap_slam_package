@@ -12,7 +12,7 @@ sudo apt-get install -y libignition-math2-dev protobuf-compiler
 sudo apt-get install -y ros-kinetic-rtabmap-ros
 mkdir -p ~/Desktop/udacity_ws/src
 cd ~/Desktop/udacity_ws/src
-git clone https://github.com/mantues/udacity_robot_ball_chaser_kinetic_package
+git clone https://github.com/mantues/udacity_robot_rtabmap_slam_package
 git clone -b kinetic-devel https://github.com/introlab/rtabmap_ros
 chmod +x ~/Desktop/udacity_ws/src/udacity_robot_ball_chaser_kinetic_package/teleop_twist_keyboard/*.py 
 cd ~/Desktop/udacity_ws
