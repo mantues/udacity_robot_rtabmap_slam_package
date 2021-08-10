@@ -69,13 +69,17 @@ Control the robot to complete the map using teleop packagein a new terminal wind
 ```
 $ roslaunch myrobot teleop.launch
 ```
+<img src="image/rtabmap.png">
 <img src="image/rtabmap_graph.png">
 
 
 ## Launch rtabmap localization to estimate my position
+Download data with below comamnd.
+
 ```
 $ cd ~/Desktop/udacity_ws/src/udacity_robot_rtabmap_slam_package/myrobot/rtab
 $ wget "https://drive.google.com/uc?export=download&id=1EhMQ744hdfSfjw7-wT_2R4OdzvuctqmF" -O output.db
+$ wget "https://drive.google.com/uc?export=download&id=1bc8qVaYrggGoZzZZJcGtn_whuXmLKmo3" -O output.db
 $ cd ~/Desktop/udacity_ws
 $ roslaunch myrobot rtab_localization.launch
 ```
@@ -90,4 +94,7 @@ Download data with below comamnd.
 ```
 $ rtabmap-databaseViewer ~/Desktop/udacity_ws/src/udacity_robot_rtabmap_slam_package/myrobot/rtab/output.db
 ```
+<img src="image/database_viewer.png">
+
+
 
