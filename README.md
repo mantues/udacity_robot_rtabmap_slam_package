@@ -78,10 +78,9 @@ Download database(output.db and cloud.ply) with below comamnd.
 
 ```
 $ cd ~/Desktop/udacity_ws/src/udacity_robot_rtabmap_slam_package/myrobot/rtab
-$ wget "https://drive.google.com/uc?export=download&id=1EhMQ744hdfSfjw7-wT_2R4OdzvuctqmF" -O output.db
-$ curl -sc /tmp/cookie "https://drive.google.com/uc?export=download&id=1bc8qVaYrggGoZzZZJcGtn_whuXmLKmo3" > /dev/null
+$ curl -sc /tmp/cookie "https://drive.google.com/uc?export=download&id=1FCGDNSU_cQNY8MYfHp0gjhWOA_ps41Sr" > /dev/null
 $ CODE="$(awk '/_warning_/ {print $NF}' /tmp/cookie)"
-$ curl -Lb /tmp/cookie "https://drive.google.com/uc?export=download&confirm=${CODE}&id=1bc8qVaYrggGoZzZZJcGtn_whuXmLKmo3" -o cloud.ply
+$ curl -Lb /tmp/cookie "https://drive.google.com/uc?export=download&confirm=${CODE}&id=1FCGDNSU_cQNY8MYfHp0gjhWOA_ps41Sr" -o output.db
 $ cd ~/Desktop/udacity_ws
 $ roslaunch myrobot rtab_localization.launch
 ```
